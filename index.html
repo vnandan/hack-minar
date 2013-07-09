@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+	<html>
+		<head>
+			<meta charset="UTF-8">
+			<script src="./js/jquery.js"></script>
+			<script src="./js/bootstrap.min.js"></script>
+			<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<style>
+			.inner:hover
+			{
+				border: 1px solid blue;
+				z-index: 1;
+			}
+			
+		</style>
+		<script>$(document).ready(function(){
+			$("button").click(function(){$("#container").toggle('medium')});
+			});</script>		
+		</head>
+		<body>
+		<button class="btn">The Hack-Minar</button>
+		Click for details
+		<div id="container" style="position:relative;background: url(img/qutub-minar.png) no-repeat;height:600px;width:auto;">
+		<div id="1" style="position:absolute; width:147px;height:13.3%;top:0%;background: url(img/qutub-minar.png) 0 0;" class="inner"  data-title="Stage2 Level4" data-content="3 people hacking this level" data-trigger="click"></div>
+		<div id="2" style="position:absolute; width:147px;height:11.7%;top:13.3%;background: url(img/qutub-minar.png) 0 15%;" class="inner"  data-title="Stage2 Level2" data-content="30 people hacking this level" data-trigger="click"></div>
+		<div id="3" style="position:absolute; width:147px;height:19.5%;top:25%;background: url(img/qutub-minar.png) 0 31%;" class="inner"  data-title="Stage1 Level10" data-content="300 people hacking this level" data-trigger="click"></div>
+		<div id="4" style="position:absolute; width:147px;height:24.25%;top:44.5%;background: url(img/qutub-minar.png) 0 58.5%;" class="inner"  data-title="Stage1 Level5" data-content="3000 people hacking this level" data-trigger="click"></div>
+		<div id="5" style="position:absolute; width:147px;height:31.25%;top:68.67%;background: url(img/qutub-minar.png) 0 99.5%;" class="inner"  data-title="Stage1 Level1" data-content="4000 people hacking this level" data-trigger="click"></div>
+		</div>
+		
+		<script>$(".inner").popover();</script>
+		</body>
+		
+		
+		
+	</html>
